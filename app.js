@@ -5,7 +5,7 @@ const request = require("request");
 const app = express();
 const port = 3000;
 
-app.use(express.static("/public"));
+app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/", function(req, res){
